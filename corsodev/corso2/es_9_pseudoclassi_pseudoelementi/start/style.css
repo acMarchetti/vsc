@@ -1,0 +1,29 @@
+blockquote {
+  background-color: rgba(0, 0, 0, 0.12);
+  padding: 8px;
+}
+blockquote::before {
+  content: ' " ';
+}
+blockquote::after {
+  content: ' " ';
+}
+
+a {
+  color: darkred;
+  text-decoration: none;
+}
+#primo::first-letter {
+  float: left;
+  color: darkred;
+  border: 3px ridge darkgoldenrod;
+  padding: 16px;
+  background-color: gold;
+  margin: 8px;
+}
+#button1:hover {
+  color: blueviolet;
+}
+a:visited {
+  color: yellow;
+}

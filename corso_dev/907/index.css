@@ -1,0 +1,9 @@
+.test1 {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 50px;
+}
+#card2 {
+  grid-row: 1;
+  grid-column: 1;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>CSS</title>
+    <style>
+      .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .square {
+        border: 1px solid black;
+        height: 60px;
+        width: 60px;
+        margin-right: 40px;
+      }
+
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px 15px 0;
+        text-align: left;
+      }
+
+      .error {
+        border-color: red !important;
+        color: red !important;
+      }
+    </style>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!--Esercizio 1-->
+    <div class="esercizio1">
+      <h2>Cards</h2>
+      <div class="flex">
+        <article>
+          <h4>Card 1</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div class="flex test">
+            <span>€19,90</span>
+            <span id="button">Recommended</span>
+          </div>
+        </article>
+
+        <article>
+          <h4>Card 2</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <div>
+            <span>€39,90</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!--Esercizio 2-->
+    <div class="esercizio2">
+      <h2>Squares</h2>
+      <div class="flex">
+        <div class="square text-white" id="square1">Square 1</div>
+        <div class="square">Square 2</div>
+        <div class="square text-white" id="square3">Square 3</div>
+      </div>
+    </div>
+
+    <!--Esercizio 3-->
+    <div class="esercizio3">
+      <h2>Form</h2>
+      <form>
+        <div class="flex">
+          <div class="input-field">
+            <label for="name" class="bigger">Name</label>
+            <input type="text" name="name" required placeholder="Name" />
+          </div>
+          <div class="input-field">
+            <label for="surname" class="bigger">Surname</label>
+            <input
+              type="text"
+              name="surname"
+              required
+              placeholder="Surname"
+              class="error"
+            />
+          </div>
+        </div>
+
+        <button type="submit" id="test2" class="bigger">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

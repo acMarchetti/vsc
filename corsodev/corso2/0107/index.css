@@ -1,0 +1,28 @@
+#block1 {
+  text-align: center;
+  color: white;
+  background-color: coral;
+  padding: 15px 10px 20px;
+  position: relative;
+}
+#block1 > button {
+  color: white;
+  background: red;
+  border: unset;
+  border-radius: 2px;
+  padding: 5px 15px;
+  margin-top: 20px;
+  transition: all 1.5s ease;
+  opacity: 1;
+}
+#block1 > button:hover {
+  background-color: white;
+  color: red;
+  opacity: 0.5;
+  scale: 1.05;
+}
+#test1 {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+}

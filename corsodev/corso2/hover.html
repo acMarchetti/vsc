@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transizione con effetto hover</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: 380px; /* Imposta la larghezza a seconda delle tue necessità */
+            height: 383px; /* Imposta l'altezza a seconda delle tue necessità */
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease; /* Transizione morbida */
+        }
+
+        .image-container:hover .image {
+            transform: scale(1.05); /* Effetto di leggera espansione sull'hover */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(255, 0, 0, 0.5));
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5em;
+            text-transform: uppercase;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="Screenshot 2024-06-17 084649.png" alt="F1 Image" class="image" />
+        <div class="overlay">Sito ufficiale</div>
+    </div>
+</body>
+</html>
