@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum di Registrazione Utente</title>
+</head>
+<body>
+    <form>
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="psw">Password</label><br>
+        <input type="password" name="psw" id="psw"><br>
+        <label for="birthday"></label>Data di Nascita<br>
+        <input type="date" name="birthday" id="birthday"><br>
+        <label for="genre">Genere</label><br>
+        <input type="radio" id="genre" name="genre" value="Maschio">
+        <label for="Maschio">Maschio</label><br>
+        <input type="radio" id="genre" name="genre" value="Femmina">
+        <label for="Femmina">Femmina</label><br>
+        <input type="radio" id="genre" name="genre" value="Altro">
+        <label for="Altro">Altro</label><br>
+        <label for="fcolor">Colore Preferito</label><br>
+        <input type="color" name="fcolor" id="fcolor"><br>
+        <label for="lang">Lingue Parlate</label><br>
+        <select name="lang" id="lang">
+            <option value="Italiano">Italiano</option>
+            <option value="Inglese">Inglese</option>
+            <option value="Francese">Francese</option>
+            <option value="Spagnolo">Spagnolo</option>
+        </select><br>
+        <label for="descr">Descrizione Personale</label><br>
+        <textarea name="descr" id="descr"></textarea><br>
+        <button>Invio</button>
+    </form>
+</body>
+</html>
