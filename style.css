@@ -1,0 +1,23 @@
+#container {
+  display: flex;
+}
+aside {
+  background-color: gray;
+  width: 150px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+aside div {
+  margin-top: 30px;
+  width: 50%;
+  height: 30px;
+  background-color: white;
+}
+#container > div {
+  flex-grow: 1;
+}
+header {
+  background-color: rgb(119, 31, 31);
+  height: 40px;
+}
